@@ -1,0 +1,25 @@
+# Rust build artifacts
+rust-src/target
+rust-src/Cargo.lock
+
+# Generated WASM output
+static/pkg/
+static/*.wasm
+static/*.wasm.map
+
+# Node
+node_modules/
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.log

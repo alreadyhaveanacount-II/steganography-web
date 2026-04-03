@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Cool Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Área de Visualização -->
+        <section id="display">
+            <canvas id="result" width="600" height="600"></canvas>
+        </section>
+
+        <!-- Painel de Controles -->
+        <section id="stuff">
+            <!-- Seleção da Imagem de Fundo (Capa) -->
+            <div class="input-group">
+                <label for="image_input">Imagem de Capa (PNG)</label>
+                <input type="file" id="image_input" accept="image/png">
+            </div>
+
+            <!-- Seleção do Arquivo Secreto -->
+            <div class="input-group">
+                <label for="file_input">Arquivo para Esconder (Opcional)</label>
+                <input type="file" id="file_input">
+                <small id="file_info" style="color: #38bdf8; font-size: 0.75rem; margin-top: 5px;"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="content" placeholder="Ou digite uma mensagem...">
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="chips" placeholder="Quantidade de chips" value="64" min="1">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Senha Forte">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="crypto_salt" placeholder="Sal da Criptografia">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="stego_salt" placeholder="Sal da Esteganografia">
+            </div>
+
+            <!-- Grid de Botões -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button id="hide" style="background: #2563eb;">Esconder</button>
+                <button id="reveal" style="background: #059669;">Revelar</button>
+            </div>
+            <button id="download" style="background: #475569;">Baixar Imagem Final</button>
+        </section>
+
+    </main>
+
+    <script type="module" src="./modules/main.mjs"></script>
+</body>
+</html>
