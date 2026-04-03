@@ -1,9 +1,6 @@
 #!/bin/bash
 echo "🔨 Building Rust WASM with release optimizations..."
 
-# Clean old build
-rm -rf static/pkg
-
 # Build with wasm-pack
 cd rust-src
 wasm-pack build --target web --release --out-dir ../static/pkg
