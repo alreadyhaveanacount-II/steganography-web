@@ -22,7 +22,6 @@ chmod +x build.sh
 ## Features
 
 - **📁 Hide Any File** - Hide text, images, executables, or any binary data inside PNG images
-- **🎲 Matrix Encoding** - F5 algorithm embeds 2 bits per 3 pixels (only modifies 1 pixel on average)
 - **🎯 Random Pixel Selection** - Password-driven CSPRNG determines pixel order (no sequential patterns)
 - **🧂 Salt Support** - Separate salts for encryption and steganography layers
 - **⚡ WebAssembly** - High-performance Rust backend compiled to WASM with O3 optimizations
